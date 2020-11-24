@@ -214,3 +214,12 @@ z-index: 1;
     background-color: #E1E6EC;
     box-shadow: 5px 5px 11px green , -5px -5px
 }
+.gametittel
+{
+  font-size: 50px;
+}
+.gamePic
+{
+  width:600px;
+  height:400px;
+}

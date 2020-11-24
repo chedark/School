@@ -28,7 +28,7 @@ picture_btn.src= music_picture[number];
         name_btn.innerHTML =music_name[number];
         song.pause();
         isPlaying = false;
-        play_img.src = "play.png";
+        play_img.src = "afbeeldingen/play.png";
         picture_btn.src= music_picture[number];
 
 
@@ -38,7 +38,7 @@ picture_btn.src= music_picture[number];
             name_btn.innerHTML =music_name[number];
             song.pause();
             isPlaying = false;
-            play_img.src = "play.png";
+            play_img.src = "afbeeldingen/play.png";
             picture_btn.src= music_picture[number];
 
     }})
@@ -51,7 +51,7 @@ picture_btn.src= music_picture[number];
           name_btn.innerHTML =music_name[number];
           song.pause();
           isPlaying = false;
-          play_img.src = "play.png";
+          play_img.src = "afbeeldingen/play.png";
           picture_btn.src= music_picture[number];
 
 
@@ -61,7 +61,7 @@ picture_btn.src= music_picture[number];
               name_btn.innerHTML =music_name[number];
               song.pause();
               isPlaying = false;
-              play_img.src = "play.png";
+              play_img.src = "afbeeldingen/play.png";
               picture_btn.src= music_picture[number];
 
       }})
@@ -75,18 +75,18 @@ picture_btn.src= music_picture[number];
             isPlaying = true;
             total_time = song.duration;
             range.max = total_time;
-            play_img.src = "pause.png";
+            play_img.src = "afbeeldingen/pause.png";
         }else{
             song.pause();
             isPlaying = false;
-            play_img.src = "play.png";
+            play_img.src = "afbeeldingen/play.png";
         }
        song.addEventListener('ended',function(){
             song.currentTime = 0
             song.pause();
             isPlaying = false;
             range.value = 0;
-            play_img.src = "play.png";
+            play_img.src = "afbeeldingen/play.png";
         })
         song.addEventListener('timeupdate',function(){
             range.value = song.currentTime;
